@@ -43,4 +43,11 @@ npm install
 
 ## 屏幕截图
 
+### 分别打开三个窗口，运行结果如下
 ![依次打开三个窗口](screenshot/election1.png)
+
+### 关闭第一个进程（leader进程），等待zk检测到节点死掉后（大约1分钟），第二个节点被选举为新的leader
+![关闭第一个进程（leader进程）](screenshot/election2.png)
+
+### 关闭第2个进程（leader进程），等待zk检测到节点死掉后（大约1分钟），第三个节点被选举为新的leader
+![关闭第一个进程（leader进程）](screenshot/election3.png)
