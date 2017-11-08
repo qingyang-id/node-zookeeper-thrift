@@ -1,7 +1,13 @@
 {
-  "name": "node-zookeeper-demo",
+  "name": "node-zookeeper-thrift",
   "version": "1.0.0",
+  "description": "nodejs zookeeper thrift 实现高可用服务",
   "private": true,
+  "author": "Sailor20",
+  "license": "MIT",
+  "engines": {
+    "node": ">=8"
+  },
   "scripts": {
     "start": "node src/app.js"
   },
