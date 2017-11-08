@@ -1,0 +1,44 @@
+{
+  "apps": [
+    {
+      "name": "api-server",
+      "script": "src/app.js",
+      "max_memory_restart": "1G",
+      // "error_file"      : "./logs/error.log",
+      // "out_file"        : "./logs/out.log",
+      "out_file": "/dev/null",
+      "error_file": "/dev/null",
+      "merge_logs"      : true,
+      "log_date_format" : "YYYY-MM-DD HH:mm Z",
+      "env": {
+        "NODE_ENV": "development"
+      },
+      "env_test" : {
+        "NODE_ENV": "test"
+      },
+      "env_pro" : {
+        "NODE_ENV": "production"
+      }
+    },
+    {
+      "name": "cron-server",
+      "script": "src/cron.js",
+      "max_memory_restart": "1G",
+      // "error_file"      : "./logs/error.log",
+      // "out_file"        : "./logs/out.log",
+      "out_file": "/dev/null",
+      "error_file": "/dev/null",
+      "merge_logs"      : true,
+      "log_date_format" : "YYYY-MM-DD HH:mm Z",
+      "env": {
+        "NODE_ENV": "development"
+      },
+      "env_test" : {
+        "NODE_ENV": "test"
+      },
+      "env_pro" : {
+        "NODE_ENV": "production"
+      }
+    }
+  ]
+}
